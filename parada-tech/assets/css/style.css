@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Montserrat&display=swap');
+
+:root {
+    --color1: #000706;
+    --color2: #00272d;
+    --color3: #134647;
+    --color4: #0c7e7e;
+    --color5: #bfac8b;
+
+    --font1: 'Gruppo', sans-serif;
+    --font2: 'Montserrat', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--color1);
+    color: var(--color5);
+}
+
+.show-menu {
+    cursor: pointer;
+}
+
+input.checkbox-menu[type="checkbox"] {
+    display: none;
+    appearance: none;
+}
+
+input.checkbox-menu[type="checkbox"]:checked~div.menu-block {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-icon {
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 0.5em;
+    vertical-align: middle;
+}
+
+.menu-block {
+    display: inline-block;
+    opacity: 0;
+    vertical-align: middle;
+    visibility: hidden;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+ul.navUL {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.navUL li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+ul.navUL li a {
+    font-family: var(--font2);
+    font-size: 1rem;
+    color: var(--color5);
+    display: block;
+    padding: 3px;
+    text-decoration: none;
+}
+
+ul.navUL li a:hover {
+    color: var(--color1);
+    text-decoration: none;
+}
