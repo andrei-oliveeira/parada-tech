@@ -1,14 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Gruppo&display=swap');
 
 :root {
-    --color1: #000706;
-    --color2: #00272d;
-    --color3: #134647;
-    --color4: #0c7e7e;
-    --color5: #bfac8b;
+    --color1: #141414;
+    --color2: #ffffff;
 
     --font1: 'Gruppo', sans-serif;
-    --font2: 'Montserrat', sans-serif;
+    --font2: 'Barlow', sans-serif;
 }
 
 * {
@@ -17,12 +14,15 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
+    margin: 0;
+    min-height: 100%;
     background-color: var(--color1);
-    color: var(--color5);
+    color: var(--color2);
 }
 
-.show-menu {
+.abre-menu {
     cursor: pointer;
 }
 
@@ -41,6 +41,11 @@ input.checkbox-menu[type="checkbox"]:checked~div.menu-block {
     font-size: 1.5em;
     padding: 0.5em;
     vertical-align: middle;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-icon:hover {
+    transform: rotateY(180deg);
 }
 
 .menu-block {
@@ -67,15 +72,68 @@ ul.navUL li {
 }
 
 ul.navUL li a {
-    font-family: var(--font2);
+    font-family: var(--font1);
     font-size: 1rem;
-    color: var(--color5);
+    font-weight: 600;
+    color: var(--color2);
     display: block;
-    padding: 3px;
+    padding: 1rem;
     text-decoration: none;
+    transition: all 0.5s ease-in-out;
 }
 
 ul.navUL li a:hover {
-    color: var(--color1);
+    transform: scale(0.95);
+    color: var(--color2);
     text-decoration: none;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0 10% 0;
+}
+
+.main-text-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: var(--color2);
+    font-family: var(--font1);
+}
+
+.main-text h1 {
+    font-size: 4rem;
+    letter-spacing: 3px;
+}
+
+.main-text h2 {
+    font-size: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.main-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-logo img:hover {
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.main-logo img:hover {
+    opacity: 0.75;
+    transform: scale(0.95);
 }
