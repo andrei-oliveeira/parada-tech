@@ -5,6 +5,7 @@
     --color2: #ffffff;
     --color3: #000000;
     --color4: #727171;
+    --color5: #fcd036;
 
     --font1: 'Gruppo', sans-serif;
     --font2: 'Barlow', sans-serif;
@@ -116,11 +117,13 @@ ul.navUL li a:hover {
 .main-text h1 {
     font-size: 4rem;
     letter-spacing: 3px;
+    color: var(--color2);
 }
 
-.main-text h2 {
-    font-size: 0.5rem;
+.main-text p {
+    font-size: 1rem;
     letter-spacing: 1px;
+    color: var(--color5);
 }
 
 .main-logo {
