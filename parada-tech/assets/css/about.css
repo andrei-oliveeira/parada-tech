@@ -115,7 +115,8 @@ main {
     gap: 15px;
 }
 
-.text-main p {
+.text-main p,
+.text-s {
     font-family: var(--font3);
     font-size: 1rem;
     text-align: justify;
