@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Gruppo&family=Montserrat&display=swap');
 
 :root {
     --color1: #141414;
     --color2: #ffffff;
     --color3: #000000;
     --color4: #727171;
+    --color5: #262626;
 
     --font1: 'Gruppo', sans-serif;
     --font2: 'Barlow', sans-serif;
+    --font3: 'Montserrat', sans-serif;
 }
 
 * {
@@ -90,8 +92,39 @@ ul.navUL li a:hover {
     text-decoration: none;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
 
+main {
+    padding: 5% 20%;
+}
 
+.text-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 2%;
+}
+
+.text-main div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.text-main p {
+    font-family: var(--font3);
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.text-main img {
+    border: 1px solid var(--color4);
+    padding: 1%;
+}
 
 
 
