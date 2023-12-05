@@ -6,6 +6,7 @@
     --color3: #000000;
     --color4: #727171;
     --color5: #262626;
+    --color6: #FCD036;
 
     --font1: 'Gruppo', sans-serif;
     --font2: 'Barlow', sans-serif;
@@ -49,7 +50,7 @@ input.checkbox-menu[type="checkbox"]:checked~div.menu-block {
 }
 
 .nav-icon:hover {
-    transform: rotateY(180deg);
+    transform: scale(0.95);
 }
 
 .menu-block {
@@ -83,12 +84,12 @@ ul.navUL li a {
     display: block;
     padding: 1rem;
     text-decoration: none;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 ul.navUL li a:hover {
     transform: scale(0.95);
-    color: var(--color2);
+    color: var(--color6);
     text-decoration: none;
 }
 
@@ -97,22 +98,32 @@ header {
     justify-content: space-between;
 }
 
-main {
-    padding: 5% 20%;
-}
-
 .text-main {
+    margin-top: 5%;
+    padding: 0 10%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 25px;
-    margin-bottom: 2%;
 }
 
 .text-main div {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.text-main h2 {
+    font-family: var(--font2);
+    font-size: 2rem;
+    text-align: start;
+    color: var(--color6);
+    text-shadow: 1px 1px 1px var(--color4);
+}
+
+.text-s {
+    padding: 0% 10%;
+    margin-bottom: 5%;
 }
 
 .text-main p,
@@ -125,16 +136,21 @@ main {
 .text-main img {
     border: 1px solid var(--color4);
     padding: 1%;
+    margin-bottom: 1%;
 }
 
+.frame-map-loc {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
-
-
-
-
-
-
+.frame-map-loc iframe {
+    width: 100%;
+    background-color: var(--color5);
+    padding: 1%;
+}
 
 footer {
     background-color: var(--color3);
